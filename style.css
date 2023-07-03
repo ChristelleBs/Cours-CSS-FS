@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+body{
+    background-color: #E6E2AF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:url(./assets/img/bg.jpg ); 
+    center/cover; min-height: 100vh;
+}
+h1 { 
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    color: #A7A37E;
+    text-shadow: 4px 3px 2px #002f2fd1;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    min-height: 500px;
+    width: 90%;
+    background-color: #e8e6d2b3;
+    margin: 0 auto;
+    border: 2px solid #0b0b0a;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 5px 5px 9px 2px #ebe4a8ba;
+    padding: 15px;
+}
+h2 {
+    margin: 0;
+}
+
+.flexbox, 
+.grid,
+.absolute
+{
+    border: 2px solid rgb(25, 49, 25) ;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+.flexbox ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+.flexbox li {
+    list-style: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background-color: #E6E2AF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* GRID */
+.grid-contener {
+display: grid;
+grid-template-columns: 30% 70%;
+}
+
+.grid img {
+    width: 80%;
+    margin-top: 10px;
+}
+input, textarea{
+    margin: 5px;
+    border: 1px solid rgb(25, 49, 25);
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "i1 i2"
+    "ta ta"
+    "vi bn";
+
+}
+textarea {
+  grid-area: ta;
+  height: 40px;
+  resize: none;
+
+}
+#btn-submit{
+    grid-area: bn;
+    cursor: pointer;
+    background: #A7A37E;
+    transition: 2s;
+}
+#btn-submit:hover {
+    background: #141412;
+    color: #E6E2AF;
+}
+.absolute{
+    position: relative;
+}
+#circle1{
+    height: 50px;
+    width: 50px;
+    background: #A7A37E;
+    position: absolute;
+    border-radius: 150px;
+    top: 20px;
+    right: 20px;
+}
